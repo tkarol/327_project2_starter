@@ -62,3 +62,23 @@ int writeArraytoFile(const std::string &outputfilename){
 void sortArray(constants::sortOrder so){
 
 }
+void extractTokensFromLine(std::string &myString){
+	stringstream ss(myString);
+	string tempToken;
+
+	while (getLine(ss, tempToken, CHAR_TO_SEARCH_FOR)){
+		processToken(tempToken);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
